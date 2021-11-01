@@ -33,6 +33,20 @@ public class Main {
             System.out.println(word + " " + wordsMap.get(word));
         }
 
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Ivanov", "2128506");
+        phoneBook.add("Ivanov", "2128507");
+        phoneBook.add("gos uslugi", "01");
+        phoneBook.add("gos uslugi", "02");
+        phoneBook.add("gos uslugi", "03");
+        phoneBook.add("gos uslugi", "04");
+        phoneBook.add("gos uslugi", "911");
+        phoneBook.add("gos uslugi", "112");
+        phoneBook.add("Petrov", "123");
+        System.out.println("Ivanov" + " " + phoneBook.get("Ivanov").toString());
+        System.out.println("Petrov" + " " + phoneBook.get("Petrov").toString());
+        System.out.println("gos uslugi" + " " + phoneBook.get("gos uslugi").toString());
+
     }
     /*1. Создать массив с набором слов (10-20 слов, должны встречаться повторяющиеся). Найти и вывести список уникальных
     слов, из которых состоит массив (дубликаты не считаем). Посчитать, сколько раз встречается каждое слово.*/
